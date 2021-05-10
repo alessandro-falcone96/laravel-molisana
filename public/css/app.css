@@ -20,6 +20,33 @@ header ul li {
   font-size: 25px;
 }
 
+main {
+  background-image: url("../images/fondo-pag-speciali.jpg");
+}
+main .containerMain {
+  width: 80%;
+  margin: auto;
+  padding: 35px 0px;
+}
+main .containerMain h2 {
+  color: blue;
+  text-transform: uppercase;
+  padding: 10px 0px;
+}
+main .containerMain .containerPasta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .containerMain .containerPasta .card {
+  width: 33%;
+  margin: 5px 0px;
+}
+main .containerMain .containerPasta .card img {
+  width: 100%;
+  height: 100%;
+}
+
 footer .container-footer {
   width: 80%;
   margin: auto;
