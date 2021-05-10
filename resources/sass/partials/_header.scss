@@ -1,12 +1,15 @@
 header{
   text-align: center;
+  font-family: 'Teko', sans-serif;
 
   ul{
     display: flex;
     justify-content: center;
     li{
       padding: 15px;
-      font-size: 25px;
+      font-size: 24px;
+      font-weight: 300;
+      color: #001941;
     }
   }
 }
