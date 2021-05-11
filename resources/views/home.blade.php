@@ -9,10 +9,10 @@
       
         @foreach ($lunghe as $pasta)
           <div class="card">
-            <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
+            <a href=""><img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}"></a>
 
             <div class="overlay">
-              <h3>{{ $pasta['titolo'] }}</h3>
+              <a href="{{route('product', ['id' => $pasta['id']])}}"><h3>{{ $pasta['titolo'] }}</h3></a>
               <hr>
             </div>
           </div>
@@ -30,7 +30,7 @@
             <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
 
             <div class="overlay">
-              <h3>{{ $pasta['titolo'] }}</h3>
+              <a href="{{route('product', ['id' => $pasta['id']])}}"><h3>{{ $pasta['titolo'] }}</h3></a>
               <hr>
             </div>
           </div>
@@ -47,7 +47,7 @@
             <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
 
             <div class="overlay">
-              <h3>{{ $pasta['titolo'] }}</h3>
+              <a href="{{route('product', ['id' => $pasta['id']])}}"><h3>{{ $pasta['titolo'] }}</h3></a>
               <hr>
             </div>
           </div>

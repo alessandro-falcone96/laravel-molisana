@@ -5,6 +5,9 @@ header{
   ul{
     display: flex;
     justify-content: center;
+    a{
+      text-decoration: none;
+    }
     li{
       padding: 15px;
       font-size: 24px;
