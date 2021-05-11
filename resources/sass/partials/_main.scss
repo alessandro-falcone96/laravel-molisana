@@ -1,4 +1,4 @@
-main{
+#mainhome{
   background-image: url("../images/fondo-pag-speciali.jpg");
 
   .containerMain{
@@ -7,7 +7,7 @@ main{
     padding: 35px 0px;
 
     h2{
-      color: #001941;
+      color: $blu;
       text-transform: uppercase;
       padding: 10px 0px;
       font-family: 'Teko', sans-serif;
@@ -47,14 +47,14 @@ main{
             font-family: 'Open Sans', sans-serif;
             font-size: 22px;
             font-weight: 400;
-            color: #001941;
+            color: $blu;
             text-align: center;
             padding-top: 50px;
             padding-bottom: 15px;
           }
 
           hr{
-            border: 1px solid #001941;
+            border: 1px solid $blu;
             width: 5%;
             margin: auto;
           }
@@ -73,4 +73,62 @@ main{
     
   }
   
+}
+
+#mainproduct{
+  background-color: $azzurro;
+  position: relative;
+
+  div{
+    width: 80%;
+    margin: auto;
+    // border: 1px solid green;
+
+    h2{
+      text-align: center;
+      color: $bluSecondario;
+      padding: 15px 0px;
+    }
+
+    img{
+      width: 100%;
+      margin: auto;
+      // border: 1px solid blue;
+      display: block;
+
+      &.srch{
+        width: 75%;
+      }
+
+      &.srcp{
+        margin: 15px 0px;
+      }
+    }
+
+    p{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 24px;
+      font-weight: 300;
+      color: $bluSecondario;
+      padding: 15px 0px;
+    }
+  }
+
+  .fa-chevron-left{
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 15px;
+    background-color: rgba(255,255,255,0.5);
+  }
+
+  .fa-chevron-right{
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 15px;
+    background-color: rgba(255,255,255,0.5);
+  }
 }

@@ -23,15 +23,15 @@ header ul li {
   color: #001941;
 }
 
-main {
+#mainhome {
   background-image: url("../images/fondo-pag-speciali.jpg");
 }
-main .containerMain {
+#mainhome .containerMain {
   width: 80%;
   margin: auto;
   padding: 35px 0px;
 }
-main .containerMain h2 {
+#mainhome .containerMain h2 {
   color: #001941;
   text-transform: uppercase;
   padding: 10px 0px;
@@ -39,22 +39,22 @@ main .containerMain h2 {
   font-size: 70px;
   font-weight: 300;
 }
-main .containerMain .containerPasta {
+#mainhome .containerMain .containerPasta {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-main .containerMain .containerPasta .card {
+#mainhome .containerMain .containerPasta .card {
   width: 33%;
   margin: 5px 0px;
   position: relative;
   overflow: hidden;
 }
-main .containerMain .containerPasta .card img {
+#mainhome .containerMain .containerPasta .card img {
   width: 100%;
   height: 100%;
 }
-main .containerMain .containerPasta .card .overlay {
+#mainhome .containerMain .containerPasta .card .overlay {
   opacity: 0;
   transition: 0.3s;
   position: absolute;
@@ -64,7 +64,7 @@ main .containerMain .containerPasta .card .overlay {
   right: 0;
   background-color: rgba(255, 255, 255, 0.5);
 }
-main .containerMain .containerPasta .card .overlay h3 {
+#mainhome .containerMain .containerPasta .card .overlay h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 22px;
   font-weight: 400;
@@ -73,17 +73,65 @@ main .containerMain .containerPasta .card .overlay h3 {
   padding-top: 50px;
   padding-bottom: 15px;
 }
-main .containerMain .containerPasta .card .overlay hr {
+#mainhome .containerMain .containerPasta .card .overlay hr {
   border: 1px solid #001941;
   width: 5%;
   margin: auto;
 }
-main .containerMain .containerPasta .card:hover .overlay {
+#mainhome .containerMain .containerPasta .card:hover .overlay {
   opacity: 1;
 }
-main .containerMain .containerPasta .card:hover img {
+#mainhome .containerMain .containerPasta .card:hover img {
   transform: scale(1.1);
   transition: 0.3s;
+}
+
+#mainproduct {
+  background-color: #B9DAE5;
+  position: relative;
+}
+#mainproduct div {
+  width: 80%;
+  margin: auto;
+}
+#mainproduct div h2 {
+  text-align: center;
+  color: #002d73;
+  padding: 15px 0px;
+}
+#mainproduct div img {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+#mainproduct div img.srch {
+  width: 75%;
+}
+#mainproduct div img.srcp {
+  margin: 15px 0px;
+}
+#mainproduct div p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #002d73;
+  padding: 15px 0px;
+}
+#mainproduct .fa-chevron-left {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#mainproduct .fa-chevron-right {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 footer .container-footer {
@@ -122,6 +170,7 @@ footer .container-footer ul.lista-menu li.first {
   font-family: "Teko", sans-serif;
   font-size: 26px;
   font-weight: 600;
+  color: #808080;
 }
 footer img {
   width: 100%;
