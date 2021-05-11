@@ -39,7 +39,7 @@ header ul li {
   padding: 35px 0px;
 }
 #mainhome .containerMain h2 {
-  color: #001941;
+  color: #404040;
   text-transform: uppercase;
   padding: 10px 0px;
   font-family: "Teko", sans-serif;
@@ -101,14 +101,25 @@ header ul li {
   background-color: #B9DAE5;
   position: relative;
 }
-#mainproduct div {
-  width: 80%;
-  margin: auto;
-}
-#mainproduct div h2 {
+#mainproduct h2 {
   text-align: center;
   color: #002d73;
   padding: 15px 0px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+#mainproduct h2 a {
+  font-weight: 300;
+  text-decoration: none;
+  color: #002d73;
+}
+#mainproduct hr {
+  border: 1px solid white;
+}
+#mainproduct div {
+  width: 80%;
+  margin: auto;
 }
 #mainproduct div img {
   width: 100%;
@@ -213,7 +224,7 @@ footer .container-footer ul.lista-menu li.first {
   font-family: "Teko", sans-serif;
   font-size: 26px;
   font-weight: 600;
-  color: #808080;
+  color: #001941;
 }
 footer img {
   width: 100%;

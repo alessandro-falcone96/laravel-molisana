@@ -2,10 +2,12 @@
 
 @section('main')
   <main id="mainproduct">
+
+    <h2><a href="{{route('homepage')}}">TUTTI I PRODOTTI ></a> {{ $pasta['titolo'] }}</h2>
+    <hr>
     
     <div>
 
-      <h2>{{ $pasta['titolo'] }}</h2>
       <img class="srch" src="{{ $pasta['src-h'] }}" alt="{{ $pasta['titolo'] }}">
       <img class="srcp" src="{{ $pasta['src-p'] }}" alt="{{ $pasta['titolo'] }}">
 

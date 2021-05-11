@@ -7,7 +7,7 @@
     padding: 35px 0px;
 
     h2{
-      color: $blu;
+      color: $marrone;
       text-transform: uppercase;
       padding: 10px 0px;
       font-family: 'Teko', sans-serif;
@@ -84,16 +84,31 @@
   background-color: $azzurro;
   position: relative;
 
+  h2{
+    text-align: center;
+    color: $bluSecondario;
+    padding: 15px 0px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+    a{
+      font-weight: 300;
+      text-decoration: none;
+      color: $bluSecondario;
+    }
+  }
+
+  hr{
+    border: 1px solid white;
+  }
+
   div{
     width: 80%;
     margin: auto;
     // border: 1px solid green;
 
-    h2{
-      text-align: center;
-      color: $bluSecondario;
-      padding: 15px 0px;
-    }
+    
 
     img{
       width: 100%;
