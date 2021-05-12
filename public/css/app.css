@@ -30,8 +30,10 @@ header ul li {
   color: #001941;
 }
 
+/* Galaxy S9+, Iphone */
 #mainhome {
   background-image: url("../images/fondo-pag-speciali.jpg");
+  background-size: contain;
 }
 #mainhome .containerMain {
   width: 80%;
@@ -56,6 +58,16 @@ header ul li {
   margin: 5px 0px;
   position: relative;
   overflow: hidden;
+}
+@media screen and (max-width: 1112px) {
+  #mainhome .containerMain .containerPasta .card {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 985px) {
+  #mainhome .containerMain .containerPasta .card {
+    width: 100%;
+  }
 }
 #mainhome .containerMain .containerPasta .card img {
   width: 100%;
@@ -195,11 +207,26 @@ footer .container-footer {
   justify-content: space-between;
   padding-top: 50px;
 }
+@media screen and (max-width: 1112px) {
+  footer .container-footer {
+    flex-wrap: wrap;
+  }
+}
 footer .container-footer .colonna {
   width: 30%;
 }
+@media screen and (max-width: 1112px) {
+  footer .container-footer .colonna {
+    width: 100%;
+  }
+}
 footer .container-footer .colonna img {
   width: 75%;
+}
+@media screen and (max-width: 1112px) {
+  footer .container-footer .colonna img {
+    width: 30%;
+  }
 }
 footer .container-footer .colonna:first-child ul li {
   text-transform: uppercase;
@@ -207,6 +234,11 @@ footer .container-footer .colonna:first-child ul li {
   font-size: 11px;
   font-weight: 300;
   color: #808080;
+}
+@media screen and (max-width: 985px) {
+  footer .container-footer .colonna:first-child ul li {
+    font-size: 16px;
+  }
 }
 footer .container-footer ul {
   padding-bottom: 10px;
@@ -218,6 +250,11 @@ footer .container-footer ul.lista-menu li:not(.first) {
   font-weight: 300;
   color: #808080;
 }
+@media screen and (max-width: 985px) {
+  footer .container-footer ul.lista-menu li:not(.first) {
+    font-size: 23px;
+  }
+}
 footer .container-footer ul.lista-menu li.first {
   padding-bottom: 10px;
   text-transform: uppercase;
@@ -225,6 +262,11 @@ footer .container-footer ul.lista-menu li.first {
   font-size: 26px;
   font-weight: 600;
   color: #001941;
+}
+@media screen and (max-width: 985px) {
+  footer .container-footer ul.lista-menu li.first {
+    font-size: 31px;
+  }
 }
 footer img {
   width: 100%;

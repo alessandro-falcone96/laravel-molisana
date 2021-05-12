@@ -1,5 +1,6 @@
 #mainhome{
   background-image: url("../images/fondo-pag-speciali.jpg");
+  background-size: contain;
 
   .containerMain{
     width: 80%;
@@ -27,6 +28,14 @@
         margin: 5px 0px;
         position: relative;
         overflow: hidden;
+
+        @media screen and (max-width: 1112px){
+          width: 48%;
+         }
+
+        @media screen and (max-width: 985px){
+          width: 100%;
+         }
 
         img{
           width: 100%;
@@ -196,3 +205,16 @@
     letter-spacing: 1px;
   }
 }
+
+
+
+
+// // Ipad Pro */
+// @media screen and (max-width: 1112px){
+//   
+// }
+
+// /* Galaxy S9+, Iphone */
+// @media screen and (max-width: 985px){
+
+// }
