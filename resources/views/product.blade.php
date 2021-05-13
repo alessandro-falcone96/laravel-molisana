@@ -3,7 +3,7 @@
 @section('main')
   <main id="mainproduct">
 
-    <h2><a href="{{route('homepage')}}">TUTTI I PRODOTTI ></a> {{ $pasta['titolo'] }}</h2>
+    <h2><a href="{{route('homepage')}}" alt="">TUTTI I PRODOTTI ></a> {{ $pasta['titolo'] }}</h2>
     <hr>
     
     <div>
@@ -31,8 +31,15 @@
 
     </div>
 
-    <a href=""><i class="fas fa-chevron-left"></i></a>
-    <a href=""><i class="fas fa-chevron-right"></i></a>
+    @if ($idProdotto > 0)
+      <a href="{{route('product', ['id' => $idProdotto - 1])}}"><i class="fas fa-chevron-left"></i></a>
+    @endif
+  
+    @if ($idProdotto < $maxIndex)
+      <a href="{{route('product', ['id' => $idProdotto + 1])}}"><i class="fas fa-chevron-right"></i></a>
+    @endif
+    
+    
 
   </main>
 @endsection

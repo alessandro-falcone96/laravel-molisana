@@ -13,50 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', 'ProdottoController@index')->name('homepage');
 
-    $data = config('paste');
+Route::get('/product/{id}', 'ProdottoController@show' )->where('id', '[0-9]+')->name('product');
 
-    $lunga = [];
-    $corta = [];
-    $cortissima = [];
-    
-    foreach ($data as $key => $tipoPasta) {
-        $tipoPasta['id'] = $key;
-        if ($tipoPasta['tipo'] == 'lunga') {
-            $lunga[] = $tipoPasta;
-        } elseif ($tipoPasta['tipo'] == 'corta') {
-            $corta[] = $tipoPasta;
-        } elseif ($tipoPasta['tipo'] == 'cortissima') {
-            $cortissima[] = $tipoPasta;
-        }
-    }
-
-
-    
-    return view('home', [
-        'lunghe' => $lunga,
-        'corte' => $corta,
-        'cortissime' => $cortissima
-    ]);
-})->name('homepage');
-
-Route::get('/product/{id}', function($id) {
-
-    $data = config('paste');
-
-    if ($id >= count($data)) {
-        abort(404);
-    }
-
-    $pasta = $data[$id];
-
-    return view('product', [
-        'pasta' => $pasta
-    ]);
-})->where('id', '[0-9]+')->name('product');
-
-Route::get('/news', function() {
-
-    return view('news');
-    })->name('news');
+Route::get('/news', 'NewsController@index')->name('news');
